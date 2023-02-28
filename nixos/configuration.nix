@@ -133,7 +133,7 @@
       # Change it after boot!
       initialPassword = "TheWalrusAndTheCarpenter";
       isNormalUser = true;
-      defaultUserShell = pkgs.zsh;
+      shell = pkgs.zsh;
       openssh.authorizedKeys.keys = [
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
       ];

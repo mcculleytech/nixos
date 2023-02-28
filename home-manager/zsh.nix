@@ -10,7 +10,7 @@
          "git"
          "sudo"
       ];
-      theme = "bira"
+      theme = "bira";
     };
   };
 }
