@@ -34,6 +34,8 @@
     atomix # puzzle game
     gnome-contacts
     gnome-initial-setup
+    gnome-weather
+    gnome-tour
   ]);
 
   # Gnome Tweaks
