@@ -9,6 +9,7 @@
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
     ./zsh.nix
+    ./terminator.nix
   ];
 
   nixpkgs = {
@@ -43,6 +44,7 @@
    bitwarden
    spotify
    sublime4 
+   terminator
   ];
 
   # Enable home-manager and git
