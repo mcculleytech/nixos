@@ -10,6 +10,9 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
+    
+    # home manager 
+    inputs.home-manager.nixosModules.home-manager
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
@@ -138,6 +141,15 @@
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
       ];
       extraGroups = [ "wheel" "networkmanager" "docker" ];
+    };
+  };
+
+  # home manager config, will rebuild with nixos
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      # Import your home-manager configuration
+      alex = import ../home-manager/home.nix
     };
   };
 
