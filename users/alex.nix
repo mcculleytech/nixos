@@ -14,11 +14,12 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      alex = import ../home-manager/home.nix;
+      alex = import ../modules/home.nix {
       programs.git = {
         userName = "alex";
         userEmail = "alex@mcculley.tech";
       };
+     };
     };
   };
 }

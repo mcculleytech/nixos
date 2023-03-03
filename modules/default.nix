@@ -1,4 +1,6 @@
-{config, pkgs, lib, ...}:
+# These are values that every setup will need
+
+{inputs, config, pkgs, lib, ...}:
 {
   nix = {
     # This will add each flake input as a registry
@@ -25,6 +27,10 @@
 
   users.defaultUserShell = pkgs.zsh;
 
+  environment.variables = {
+    EDITOR = "vim";
+  };
+
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   
@@ -48,7 +54,6 @@
     zsh
     fira-code
   ];
-
 
   services.openssh = {
     enable = true;
