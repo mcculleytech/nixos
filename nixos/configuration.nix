@@ -9,7 +9,7 @@
     # inputs.hardware.nixosModules.common-ssd
 
     # You can also split up your configuration and import pieces of it here:
-    # ./users.nix
+    ./users.nix
     
     # home manager 
     inputs.home-manager.nixosModules.home-manager
@@ -130,28 +130,6 @@
     firefox
     zsh
   ];
-
-  users.users = {
-    alex = {
-      # Change it after boot!
-      initialPassword = "TheWalrusAndTheCarpenter";
-      isNormalUser = true;
-      shell = pkgs.zsh;
-      openssh.authorizedKeys.keys = [
-        # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
-      ];
-      extraGroups = [ "wheel" "networkmanager" "docker" ];
-    };
-  };
-
-  # home manager config, will rebuild with nixos
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      # Import your home-manager configuration
-      alex = import ../home-manager/home.nix;
-    };
-  };
 
   services.openssh = {
     enable = true;
