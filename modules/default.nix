@@ -45,6 +45,7 @@
     firefox
     zsh
     fira-code
+    tree
   ];
 
   services.openssh = {
