@@ -15,7 +15,7 @@
       ga           = "git add .";
       gcm          = "git commit -m";
       gs           = "git status";
-      nix-rebuild  = "sudo nixos-rebuild switch";
+      os-rebuild   = "sudo nixos-rebuild switch";
     };
   };
 }
