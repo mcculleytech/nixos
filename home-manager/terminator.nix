@@ -1,13 +1,9 @@
 { inputs, lib, config, pkgs, ... }: {
 
-  # Enable home-manager to manager terminator
-
-
   programs.terminator = { 
     enable = true;
     config = {
       global_config = { 
-        # nord color pallete
         title_inactive_bg_color = "#4C566A";
         title_inactive_fg_color = "#D8DEE9";
         title_receive_bg_color = "#8FBCBB";
@@ -16,6 +12,7 @@
         title_transmit_fg_color = "#2E3440";
       };
       
+      # set nord as default
       profiles.default = {
         background_color = "#2E3440";
         cursor_color = "#D8DEE9";

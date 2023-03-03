@@ -38,13 +38,13 @@
     homeDirectory = "/home/alex";
   };
 
-  # Add stuff for your user as you see fit:
-  # programs.neovim.enable = true;
   home.packages = with pkgs; [ 
    bitwarden
    spotify
    sublime4 
    terminator
+   joplin-desktop
+   flameshot
   ];
 
   # Enable home-manager and git
