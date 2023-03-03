@@ -16,7 +16,6 @@
       gcm          = "git commit -m";
       gs           = "git status";
       nix-rebuild  = "sudo nixos-rebuild switch";
-      gpom	   = "git push -u origin master";
     };
   };
 }
