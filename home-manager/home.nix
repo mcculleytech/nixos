@@ -10,6 +10,7 @@
     # ./nvim.nix
     ./zsh.nix
     ./terminator.nix
+    ./gtk.nix
   ];
 
   nixpkgs = {
@@ -43,8 +44,9 @@
    spotify
    sublime4 
    terminator
-   joplin-desktop
    flameshot
+   joplin
+   guake
   ];
 
   # Enable home-manager and git
@@ -52,7 +54,7 @@
   programs.git.enable = true;
 
   # Nicely reload system units when changing configs
-  systemd.user.startServices = "sd-switch";
+  systemd.user.startServices = "sd-switch";  
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "22.11";

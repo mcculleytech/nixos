@@ -93,16 +93,18 @@
       auto-optimise-store = true;
     };
   };
-
-
+  
+  # hostname
   networking.hostName = "nixos";
   
+  # System wide applications
   environment.systemPackages = with pkgs; [
     vim
     wget
     git
     firefox
     zsh
+    fira-code
   ];
 
   services.openssh = {
