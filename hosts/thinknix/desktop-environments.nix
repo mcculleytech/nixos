@@ -35,7 +35,16 @@
     gnome-contacts
     gnome-initial-setup
     gnome-weather
-    gnome-tour
+    gnome-text-editor
+    gnome-document-scanner
+    gnome-maps
+    gnome-help
+    gnome-clocks
+    gnome-font-viewer
+    gnome-shell
+    gnome-browser-connector
+    gnome-browser-connector-host
+    gnome-system-monitor
   ]);
 
   # Gnome Tweaks
