@@ -10,7 +10,7 @@
     ../../../modules/home.nix
     ../../../modules/zsh
     ../../../modules/terminator
-    ../../../modules/gtk
+    ../../../themes/gtk
     ../../../modules/git
     ];
 
