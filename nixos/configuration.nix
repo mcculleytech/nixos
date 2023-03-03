@@ -149,7 +149,7 @@
     extraSpecialArgs = { inherit inputs; };
     users = {
       # Import your home-manager configuration
-      alex = import ../home-manager/home.nix
+      alex = import ../home-manager/home.nix;
     };
   };
 
