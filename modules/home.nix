@@ -17,8 +17,11 @@
    sublime4 
    terminator
    flameshot
-   joplin
    guake
+   element-desktop
+   joplin-desktop
+   jellyfin-media-player
+   tootle
   ];
 
   # Enable home-manager

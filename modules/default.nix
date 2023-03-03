@@ -50,6 +50,7 @@
     fira-code
     tree
     terminator
+    mlocate
   ];
 
 }
