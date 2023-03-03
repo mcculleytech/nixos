@@ -3,7 +3,7 @@
 { inputs, lib, config, pkgs, ... }: {
   imports = [  
     ../../modules
-    ../../users/alex.nix
+    ./users/alex.nix
     ./desktop-environments.nix
     ./hardware-configuration.nix
   ];

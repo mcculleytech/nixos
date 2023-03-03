@@ -14,8 +14,8 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      alex = import ../modules/home.nix {
-      programs.git = {
+      alex = {
+        programs.git = {
         userName = "alex";
         userEmail = "alex@mcculley.tech";
       };
