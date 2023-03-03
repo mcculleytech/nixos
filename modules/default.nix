@@ -19,6 +19,9 @@
 
   users.defaultUserShell = pkgs.zsh;
 
+  # Remove xterm
+  services.xserver.excludePackages = [ pkgs.xterm ];
+
   environment.variables = {
     EDITOR = "vim";
   };
