@@ -3,7 +3,6 @@
 { inputs, lib, config, pkgs, ... }: {
   imports = [  
     ../../modules
-    ../../modules/ssh
     ./users/alex.nix
     ./desktop-environments.nix
     ./hardware-configuration.nix

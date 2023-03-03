@@ -1,7 +1,12 @@
 # These are values that every setup will need
 
-{inputs, config, pkgs, lib, ...}:
-{
+{inputs, config, pkgs, lib, ...}: {
+
+  imports = [
+   ./mlocate
+   ./ssh
+  ];
+
   nix = {
 	settings = {
       experimental-features = "nix-command flakes";
