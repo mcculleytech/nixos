@@ -12,6 +12,7 @@
     ../../../modules/terminator
     ../../../modules/gtk
     ../../../modules/git
+    ../../../modules/ssh
     ];
 
     home.stateVersion = "21.11";

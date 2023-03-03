@@ -2,12 +2,6 @@
 
 { inputs, lib, config, pkgs, ... }: {
   # You can import other home-manager modules here
-  imports = [
-    ./zsh
-    ./terminator
-    ./gtk
-    ./git
-  ];
 
   home = {
     username = "alex";
