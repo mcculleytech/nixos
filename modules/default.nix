@@ -49,6 +49,7 @@
     zsh
     fira-code
     tree
+    terminator
   ];
 
   services.openssh = {

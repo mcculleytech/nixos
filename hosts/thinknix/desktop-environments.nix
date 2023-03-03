@@ -16,37 +16,9 @@
   services.xserver.desktopManager.gnome.enable = true;
   services.gnome.core-utilities.enable = false;
   # Exclude gnome software
-  # environment.gnome.excludePackages = (with pkgs; [
-  #   gnome-photos
-  #   gnome-tour
-  # ]) ++ (with pkgs.gnome; [
-  #   cheese # webcam tool
-  #   gnome-music
-  #   gnome-terminal
-  #   gedit # text editor
-  #   epiphany # web browser
-  #   geary # email reader
-  #   evince # document viewer
-  #   gnome-characters
-  #   totem # video player
-  #   tali # poker game
-  #   iagno # go game
-  #   hitori # sudoku game
-  #   atomix # puzzle game
-  #   gnome-contacts
-  #   gnome-initial-setup
-  #   gnome-weather
-  #   gnome-text-editor
-  #   gnome-document-scanner
-  #   gnome-maps
-  #   gnome-help
-  #   gnome-clocks
-  #   gnome-font-viewer
-  #   gnome-shell
-  #   gnome-browser-connector
-  #   gnome-browser-connector-host
-  #   gnome-system-monitor
-  # ]);
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-tour
+  ]);
 
   # Gnome Tweaks
   environment.systemPackages = [
