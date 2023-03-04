@@ -54,7 +54,6 @@
     zsh
     fira-code
     tree
-    terminator
     mlocate
   ];
 
