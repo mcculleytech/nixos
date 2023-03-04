@@ -6,6 +6,9 @@
     terminal = false;
     type = "Application";
     icon = "joplin";
+    startupwmclass = "Joplin";
+    mimetype="x-scheme-handler/joplin;";
     comment = "Joplin for Desktop";
+    categories = "Office";
   };
 }
