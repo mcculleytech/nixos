@@ -4,7 +4,7 @@
   imports = [  
     ../../modules
     ./users/alex.nix
-    ./desktop-environments.nix
+    ../../desktop-environments/gnome.nix
     ./hardware-configuration.nix
   ];
 

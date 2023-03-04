@@ -21,9 +21,11 @@
   ]);
 
   # Gnome Tweaks
-  environment.systemPackages = [
-    pkgs.gnome.gnome-tweaks
-  ];
+  environment.systemPackages= (with pkgs.gnome; [
+    gnome-tweaks
+    nautilus
+    gnome-calendar
+  ]);
 
   # Configure keymap in X11
   services.xserver = {
