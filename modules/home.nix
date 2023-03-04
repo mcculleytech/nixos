@@ -3,7 +3,6 @@
 { inputs, lib, config, pkgs, ... }: {
   # You can import other home-manager modules here
   imports = [
-    ./joplin-desktop
   ];
 
   home = {
@@ -19,9 +18,10 @@
    flameshot
    guake
    element-desktop
-   joplin-desktop
+   joplin-desktop # module for theming is set in hosts module
    jellyfin-media-player
    tootle
+   remmina
   ];
 
   # Enable home-manager

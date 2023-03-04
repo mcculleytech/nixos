@@ -7,6 +7,7 @@
 
   home-manager.users.alex = {
     imports = [
+    ../../../modules/joplin-desktop
     ../../../modules/home.nix
     ../../../modules/zsh
     ../../../modules/terminator
