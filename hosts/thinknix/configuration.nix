@@ -3,9 +3,9 @@
 { inputs, lib, config, pkgs, ... }: {
   imports = [  
     ../../modules
-    ./users/alex.nix
-    ../../desktop-environments/gnome.nix
+    ../../desktop-environments/gnome
     ./hardware-configuration.nix
+    ./users/alex.nix
   ];
 
   # Bootloader.

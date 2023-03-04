@@ -11,8 +11,9 @@
     ../../../modules/home.nix
     ../../../modules/zsh
     ../../../modules/terminator
-    ../../../themes/gtk
+    ../../../modules/tmux
     ../../../modules/git
+    ../../../themes/gtk
     ];
 
     home.stateVersion = "21.11";

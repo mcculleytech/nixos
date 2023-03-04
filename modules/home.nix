@@ -24,7 +24,6 @@
    tootle
    remmina
    neofetch
-   
   ];
 
   # Enable home-manager

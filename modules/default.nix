@@ -49,9 +49,9 @@
 
   environment.systemPackages = with pkgs; [
     vim
+    firefox
     wget
     git
-    firefox
     zsh
     fira-code
     tree
