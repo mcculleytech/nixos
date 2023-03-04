@@ -18,11 +18,13 @@
    flameshot
    guake
    element-desktop
+   signal-desktop
    joplin-desktop # module for theming is set in hosts module
    jellyfin-media-player
    tootle
    remmina
    neofetch
+   
   ];
 
   # Enable home-manager

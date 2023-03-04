@@ -24,8 +24,10 @@
 
   users.defaultUserShell = pkgs.zsh;
 
-  # Remove xterm
   services.xserver.excludePackages = [ pkgs.xterm ];
+  
+  virtualisation.libvirtd.enable = true;
+  programs.dconf.enable = true;
 
   environment.variables = {
     EDITOR = "vim";
@@ -55,6 +57,9 @@
     fira-code
     tree
     mlocate
+    parted
+    tmux
+    virt-manager
   ];
 
 }
