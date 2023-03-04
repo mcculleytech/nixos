@@ -9,6 +9,9 @@
       icon = "joplin";
       comment = "Joplin for Desktop";
       categories = [ "Office" ];
+      settings = {
+        StartupWMClass = "joplin";
+      };
     };
   };
 }
