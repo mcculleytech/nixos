@@ -3,7 +3,6 @@
 {inputs, config, pkgs, lib, ...}: {
 
   imports = [
-   ./mlocate
    ./ssh
   ];
 
@@ -56,7 +55,6 @@
     zsh
     fira-code
     tree
-    mlocate
     parted
     tmux
     virt-manager

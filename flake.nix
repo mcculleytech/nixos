@@ -1,5 +1,5 @@
 {
-  description = "NixOS workstation flake config";
+  description = "NixOS workstation config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-22.11";
@@ -11,6 +11,7 @@
 
   outputs = { nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
+      
       thinknix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; }; # Pass flake inputs to our config
@@ -23,7 +24,8 @@
           }
           ./hosts/thinknix/configuration.nix 
         ];
-      }; 
+      };
+ 
     };
   };
 }
