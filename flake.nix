@@ -27,6 +27,21 @@
           ./hosts/thinknix/configuration.nix 
         ];
       };
+
+      aquinas = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; }; # Pass flake inputs to our config
+        modules = [ 
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            # Overlays here
+          }
+          nixos-hardware.nixosModules.dell-xps-15-9500-nvidia
+          ./hosts/aquinas/configuration.nix 
+        ];
+      };
  
     };
   };
