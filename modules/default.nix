@@ -51,6 +51,7 @@
     vim
     firefox
     wget
+    curl
     git
     zsh
     fira-code

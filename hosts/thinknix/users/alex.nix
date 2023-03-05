@@ -9,6 +9,7 @@
     imports = [
     ../../../modules/joplin-desktop
     ../../../modules/home.nix
+    ../../../modules/vim
     ../../../modules/zsh
     ../../../modules/terminator
     ../../../modules/tmux
