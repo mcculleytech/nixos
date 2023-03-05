@@ -3,7 +3,7 @@
 {inputs, config, pkgs, lib, ...}: {
 
   imports = [
-   ./ssh
+    ./ssh
   ];
 
   nix = {
@@ -24,8 +24,12 @@
   users.defaultUserShell = pkgs.zsh;
 
   services.xserver.excludePackages = [ pkgs.xterm ];
+
   
+
   virtualisation.libvirtd.enable = true;
+  virtualisation.docker.enable = true;
+  virtualisation.docker.storageDriver = "btrfs";  
   programs.dconf.enable = true;
 
   environment.variables = {
@@ -59,6 +63,7 @@
     parted
     tmux
     virt-manager
+    arion
   ];
 
 }
