@@ -11,12 +11,13 @@
     ../../../modules/home.nix
     ../../../modules/vim
     ../../../modules/zsh
-    ../../../modules/terminator
+    #../../../modules/terminator
     ../../../modules/tmux
     ../../../modules/git
     ../../../themes/gtk
+    ../../../themes/nix-colors
     ];
 
-    home.stateVersion = "21.11";
+    home.stateVersion = "22.11";
   };
 }

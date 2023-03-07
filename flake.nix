@@ -8,9 +8,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master"; 
+    nix-colors.url = "github:misterio77/nix-colors";
   };
 
-  outputs = { nixpkgs, home-manager, nixos-hardware, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, nixos-hardware, nix-colors, ... }@inputs: {
     nixosConfigurations = {
       
       thinknix = nixpkgs.lib.nixosSystem {
@@ -36,6 +37,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs  = { inherit nix-colors; }; #pass inputs to home-manager
             # Overlays here
           }
           nixos-hardware.nixosModules.dell-xps-15-9500-nvidia

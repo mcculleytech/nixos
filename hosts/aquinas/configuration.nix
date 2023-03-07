@@ -11,6 +11,7 @@
       ../../desktop-environments/gnome
       ./users/alex.nix
       ./hardware-configuration.nix
+      ./nvidia.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -25,9 +26,13 @@
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  # File system options
+  fileSystems = {
+  "/".options = [ "compress=zstd" ];
+  "/home".options = [ "compress=zstd" ];
+  "/nix".options = [ "compress=zstd" "noatime" ];
+  "/var/log".options = [ "compress=zstd" ];
+};
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -42,12 +47,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput.enable = true;
-  
-  # Make backup of configuration.nix
-  system.copySystemConfiguration = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

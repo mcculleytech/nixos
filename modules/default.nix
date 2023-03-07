@@ -7,16 +7,16 @@
   ];
 
   nix = {
-	settings = {
+	  settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
-	};
+	  };
 
-	gc = {
+	  gc = {
       automatic = true;
       dates = "weekly";
       options = "--delete-older-than 32d";
-	};
+	  };
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -24,8 +24,6 @@
   users.defaultUserShell = pkgs.zsh;
 
   services.xserver.excludePackages = [ pkgs.xterm ];
-
-  
 
   virtualisation.libvirtd.enable = true;
   virtualisation.docker.enable = true;

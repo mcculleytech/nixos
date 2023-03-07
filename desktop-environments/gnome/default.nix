@@ -20,11 +20,18 @@
     gnome-tour
   ]);
 
+  # Online Accounts
+  services.accounts-daemon.enable = true;
+  services.gnome.gnome-online-accounts.enable = true;
+
   # Gnome Tweaks
-  environment.systemPackages= (with pkgs.gnome; [
-    gnome-tweaks
-    nautilus
-    gnome-calendar
+  environment.systemPackages= (with pkgs; [
+    gnome.gnome-tweaks
+    gnome.nautilus
+    gnome.gnome-calendar
+    gnome.gnome-control-center
+    gnomeExtensions.appindicator
+    gnomeExtensions.dash-to-dock
   ]);
 
   # Configure keymap in X11

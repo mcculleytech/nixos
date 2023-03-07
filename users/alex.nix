@@ -2,7 +2,7 @@
 
   users.users = {
     alex = {
-      initialPassword = "TheWalrusAndTheCarpenter";
+      initialPassword = "ChangeMe!";
       isNormalUser = true;
       openssh.authorizedKeys.keys = [
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
