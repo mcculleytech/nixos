@@ -13,13 +13,5 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
-    users = {
-      alex = {
-        programs.git = {
-        userName = "alex";
-        userEmail = "alex@mcculley.tech";
-      };
-     };
-    };
   };
 }

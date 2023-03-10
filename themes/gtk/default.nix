@@ -12,6 +12,11 @@ in
       package = pkgs.zafiro-icons;
     };
 
+    cursorTheme = {
+      name = "Adwaita";
+      package = pkgs.gnome.adwaita-icon-theme;
+    };
+
     theme = {
        name = "${theme}";
        package = pkgs.nordic;

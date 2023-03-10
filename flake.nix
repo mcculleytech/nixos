@@ -22,6 +22,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = { inherit inputs; };
             # Overlays here
           }
           nixos-hardware.nixosModules.lenovo-thinkpad-t450s
@@ -37,7 +38,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs  = { inherit nix-colors; }; #pass inputs to home-manager
+            home-manager.extraSpecialArgs  = { inherit inputs; }; #pass inputs to home-manager
             # Overlays here
           }
           nixos-hardware.nixosModules.dell-xps-15-9500-nvidia
